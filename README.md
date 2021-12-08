@@ -4,5 +4,5 @@ GH Pages website for the Observable-based 'Kentucky State COVID-19 Tracking' Ter
 
 ## Authors: 
 ### Paul RK Cruz (cruz.p@northeastern.edu) @paul-rk-cruz
-### Chih Ming Sun @davyaco
+### Chih Ming Sun (davyaco@gmail.com) @davyaco
 
