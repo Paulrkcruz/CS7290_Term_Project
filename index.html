@@ -29,16 +29,13 @@
         new Runtime().module(notebook, Inspector.into(document.body));
         </script>
 <script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
-new Runtime().module(define, name => {
-if (name === "viewof variable") return new Inspector(document.querySelector("#observablehq-viewof-variable-705adf81"));
-if (name === "viewof map") return new Inspector(document.querySelector("#observablehq-viewof-map-705adf81"));
-if (name === "viewof selectedDataSourceIndex") return new Inspector(document.querySelector("#observablehq-viewof-selectedDataSourceIndex-705adf81"));
-if (name === "viewof selectedCountry") return new Inspector(document.querySelector("#observablehq-viewof-selectedCountry-705adf81"));
-if (name === "viewof day") return new Inspector(document.querySelector("#observablehq-viewof-day-705adf81"));
-return ["dataSource","query","fetchOptions","raw_data1","data1","metadata","countries"].includes(name);
-});
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "viewof variable") return new Inspector(document.querySelector("#observablehq-viewof-variable-705adf81"));
+      if (name === "viewof map") return new Inspector(document.querySelector("#observablehq-viewof-map-705adf81"));
+      if (name === "viewof day") return new Inspector(document.querySelector("#observablehq-viewof-day-705adf81"));
+    });
 </script>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -286,21 +283,18 @@ new Runtime().module(define, name => {
                                 <div class="col-xl-8 col-lg-7">
                                     <div class="card shadow mb-4">
                                 <div class="card-body">
-
                                     <div id="observablehq-viewof-variable-705adf81"></div>
-                                    <div id="observablehq-viewof-selectedDataSourceIndex-705adf81"></div>
-                                    <div id="observablehq-viewof-selectedCountry-705adf81"></div>
                                     <div id="observablehq-viewof-day-705adf81"></div>
-                    
                     <div class="card-body">
-                        <div id="observablehq-viewof-map-705adf81"></div>
                     </div>
                 </div>
             </div>
+            <div id="observablehq-viewof-map-705adf81"></div>
         </div>
     </div>
 </div>
 </div>
+
                         <!-- USA Case Trends -->
                         <div class="col-xl-8 col-lg-7">
                             <div class="card shadow mb-4">
@@ -328,7 +322,6 @@ new Runtime().module(define, name => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <!-- Jefferson County, KY - Case Trends -->
                                             <div class="col-xl-8 col-lg-7">
                                                 <div class="card shadow mb-4">
@@ -379,16 +372,23 @@ new Runtime().module(define, name => {
                                     <div
                                 </div>
                             </div>
+
+                            <h1>Project Description:</h1>
+                            <p> This project focused mainly on Jefferson County, Kentucky, which
+
+                            <h1>Summary:</h1>
                         </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white"><center>
+                <p>Credit: <a href="https://observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3">CS7290 Data Visualizations Term-Project -- Kentucky State COVID-19 Tracking by Paul RK Cruz</a></p>
+
+<br>
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; 2021 - NEU CS7290 Term Project</span><br>
+                        <span>Copyright &copy; 2021 - NEU CS7290 Term Project - Fall 2021</span><br>
                         <span><b>Authors:</b> Paul RK Cruz, Chih Ming Sun</span><br>
-                        <span><b>Observable Code:</b> <a href="https://observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3<">Observable Notebook</a></span><br>
                     </div>
                 </div></center>
             </footer>
