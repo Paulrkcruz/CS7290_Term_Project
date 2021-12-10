@@ -40,6 +40,21 @@ new Runtime().module(define, name => {
   return ["query","fetchOptions","raw_data1","data1","dataSource","metadata","countries","make_chart","make_figure","USChart","KentuckyChart","JeffersonCountyChart","process_data","county_data","active_state_counties_data","viewof selected_county","state_data","active_state_data","us_data"].includes(name);
 });
 </script>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "TotalPopulation") return new Inspector(document.querySelector("#observablehq-TotalPopulation-89c3248d"));
+  if (name === "TotalDeaths") return new Inspector(document.querySelector("#observablehq-TotalDeaths-89c3248d"));
+  if (name === "TotalVaccinated") return new Inspector(document.querySelector("#observablehq-TotalVaccinated-89c3248d"));
+  if (name === "total_cases") return new Inspector(document.querySelector("#observablehq-total_cases-89c3248d"));
+  if (name === "USChart") return new Inspector(document.querySelector("#observablehq-USChart-89c3248d"));
+  if (name === "KentuckyChart") return new Inspector(document.querySelector("#observablehq-KentuckyChart-89c3248d"));
+  if (name === "JeffersonCountyChart") return new Inspector(document.querySelector("#observablehq-JeffersonCountyChart-89c3248d"));
+  if (name === "vaccines_chart") return new Inspector(document.querySelector("#observablehq-vaccines_chart-89c3248d"));
+    });
+</script>
+
 </head>
 
 <body id="page-top">
@@ -140,8 +155,7 @@ new Runtime().module(define, name => {
                                                 Total Cases</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 
-                                                <iframe width="100%" height="100%" frameborder="0"
-                                                src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=TotalPopulation"></iframe>
+                                                <div id="observablehq-TotalPopulation-89c3248d"></div>
                                               
                                             </div>
                                         </div>
@@ -163,8 +177,7 @@ new Runtime().module(define, name => {
                                                                         Total Cases</div>
                                                                     <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                         
-                                                                        <iframe width="100%" height="100%" frameborder="0"
-                                                                        src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=total_cases"></iframe>
+                                                                        <div id="observablehq-total_cases-89c3248d"></div>
 
                                                                     </div>
                                                                 </div>
@@ -186,8 +199,7 @@ new Runtime().module(define, name => {
                                                                         Total Deaths</div>
                                                                     <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                         
-                                                                        <iframe width="100%" height="100%" frameborder="0"
-                                                                        src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=TotalDeaths"></iframe>
+                                                                        <div id="observablehq-TotalDeaths-89c3248d"></div>
                                                                         
                                                                     </div>
                                                                 </div>
@@ -209,8 +221,7 @@ new Runtime().module(define, name => {
                                                                         Total Vaccinations</div>
                                                                     <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                         
-                                                                        <iframe width="100%" height="100%" frameborder="0"
-                                                                        src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=TotalVaccinated"></iframe>
+                                                                        <div id="observablehq-TotalVaccinated-89c3248d"></div>
                                                                         
                                                                     </div>
                                                                 </div>
@@ -254,8 +265,9 @@ new Runtime().module(define, name => {
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary"></h6>
                                     <span> Selections:</span><br>
-                                            <iframe width="100%" height="100%" frameborder="0"
-                                            src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=viewof+selectedDataSourceIndex%2Cviewof+selectedCountry%2Cviewof+variable%2Cviewof+day"></iframe>
+
+                                    <div id="observablehq-USChart-89c3248d"></div>
+
                                 </div>
                             </div>
                         </div>
@@ -270,8 +282,7 @@ new Runtime().module(define, name => {
                                                         <h6 class="m-0 font-weight-bold text-primary"></h6>
                                                         <span> Selections:</span><br>
                                                         
-                                                        <iframe width="100%" height="100%" frameborder="0"
-                                                        src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=KentuckyChart"></iframe>
+                                                        <div id="observablehq-KentuckyChart-89c3248d"></div>
 
                                                     </div>
                                                 </div>
@@ -285,8 +296,7 @@ new Runtime().module(define, name => {
                                                         <h6 class="m-0 font-weight-bold text-primary"></h6>
                                                         <span> Selections:</span><br>
                                                         
-                                                        <iframe width="100%" height="100%" frameborder="0"
-                                                        src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=JeffersonCountyChart"></iframe>
+                                                        <div id="observablehq-JeffersonCountyChart-89c3248d"></div>
 
                                                     </div>
                                                 </div>
@@ -302,8 +312,7 @@ new Runtime().module(define, name => {
                                                         <h6 class="m-0 font-weight-bold text-primary"></h6>
                                                         <span> Selections:</span><br>
                                                         
-                                                        <iframe width="100%" height="100%" frameborder="0"
-                                                        src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=viewof+viztype%2Cvaccines_chart"></iframe>
+                                                        <div id="observablehq-vaccines_chart-89c3248d"></div>
 
                                                     </div>
                                                 </div>
