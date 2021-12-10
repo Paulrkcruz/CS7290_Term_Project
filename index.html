@@ -28,18 +28,17 @@
         // Load the notebook, which renders the value of each cell into the provided DOM node.
         new Runtime().module(notebook, Inspector.into(document.body));
         </script>
-        <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
-        new Runtime().module(define, name => {
-          if (name === "viewof variable") return new Inspector(document.querySelector("#observablehq-viewof-variable-705adf81"));
-          if (name === "viewof map") return new Inspector(document.querySelector("#observablehq-viewof-map-705adf81"));
-          if (name === "viewof selectedDataSourceIndex") return new Inspector(document.querySelector("#observablehq-viewof-selectedDataSourceIndex-705adf81"));
-          if (name === "viewof selectedCountry") return new Inspector(document.querySelector("#observablehq-viewof-selectedCountry-705adf81"));
-          if (name === "viewof day") return new Inspector(document.querySelector("#observablehq-viewof-day-705adf81"));
-          return ["dataSource","query","fetchOptions","raw_data1","data1","metadata","countries"].includes(name);
-        });
-        </script>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
+new Runtime().module(define, name => {
+if (name === "viewof variable") return new Inspector(document.querySelector("#observablehq-viewof-variable-705adf81"));
+if (name === "viewof map") return new Inspector(document.querySelector("#observablehq-viewof-map-705adf81"));
+if (name === "viewof selectedDataSourceIndex") return new Inspector(document.querySelector("#observablehq-viewof-selectedDataSourceIndex-705adf81"));
+if (name === "viewof selectedCountry") return new Inspector(document.querySelector("#observablehq-viewof-selectedCountry-705adf81"));
+if (name === "viewof day") return new Inspector(document.querySelector("#observablehq-viewof-day-705adf81"));
+return ["dataSource","query","fetchOptions","raw_data1","data1","metadata","countries"].includes(name);
+});
 </script>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -287,8 +286,11 @@ new Runtime().module(define, name => {
                                 <div class="col-xl-8 col-lg-7">
                                     <div class="card shadow mb-4">
                                 <div class="card-body">
-                                    <div id="observablehq-viewof-day-705adf81"></div>
+
                                     <div id="observablehq-viewof-variable-705adf81"></div>
+                                    <div id="observablehq-viewof-selectedDataSourceIndex-705adf81"></div>
+                                    <div id="observablehq-viewof-selectedCountry-705adf81"></div>
+                                    <div id="observablehq-viewof-day-705adf81"></div>
                     
                     <div class="card-body">
                         <div id="observablehq-viewof-map-705adf81"></div>
