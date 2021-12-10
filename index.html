@@ -20,6 +20,7 @@
     <!-- Custom styles -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <script type="module">
+
         // Load the Observable runtime and inspector.
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
         // CS7290 Term project source code notebook, compiled as an ES module.
@@ -27,19 +28,18 @@
         // Load the notebook, which renders the value of each cell into the provided DOM node.
         new Runtime().module(notebook, Inspector.into(document.body));
         </script>
-        <script type="module">
-            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-            import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
-            new Runtime().module(define, name => {
-              if (name === "viewof selectedCountry") return new Inspector(document.querySelector("#observablehq-viewof-selectedCountry-89c3248d"));
-              if (name === "viewof selectedDataSourceIndex") return new Inspector(document.querySelector("#observablehq-viewof-selectedDataSourceIndex-89c3248d"));
-              if (name === "viewof map") return new Inspector(document.querySelector("#observablehq-viewof-map-89c3248d"));
-              if (name === "viewof day") return new Inspector(document.querySelector("#observablehq-viewof-day-89c3248d"));
-              if (name === "viewof type") return new Inspector(document.querySelector("#observablehq-viewof-type-89c3248d"));
-              return ["query","fetchOptions","raw_data1","data1","dataSource","metadata","countries","make_chart","make_figure","USChart","KentuckyChart","JeffersonCountyChart","process_data","county_data","active_state_counties_data","viewof selected_county","state_data","active_state_data","us_data"].includes(name);
-            });
-            </script>
-            
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof selectedCountry") return new Inspector(document.querySelector("#observablehq-viewof-selectedCountry-89c3248d"));
+  if (name === "viewof selectedDataSourceIndex") return new Inspector(document.querySelector("#observablehq-viewof-selectedDataSourceIndex-89c3248d"));
+  if (name === "viewof map") return new Inspector(document.querySelector("#observablehq-viewof-map-89c3248d"));
+  if (name === "viewof day") return new Inspector(document.querySelector("#observablehq-viewof-day-89c3248d"));
+  if (name === "viewof type") return new Inspector(document.querySelector("#observablehq-viewof-type-89c3248d"));
+  return ["query","fetchOptions","raw_data1","data1","dataSource","metadata","countries","make_chart","make_figure","USChart","KentuckyChart","JeffersonCountyChart","process_data","county_data","active_state_counties_data","viewof selected_county","state_data","active_state_data","us_data"].includes(name);
+});
+</script>
 </head>
 
 <body id="page-top">
@@ -142,7 +142,11 @@
                                                 
                                                 <iframe width="100%" height="100%" frameborder="0"
                                                 src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=TotalPopulation"></iframe>
+                                              
                                             </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -164,6 +168,9 @@
 
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-auto">
+                                                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -183,6 +190,9 @@
                                                                         src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=TotalDeaths"></iframe>
                                                                         
                                                                     </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -204,6 +214,9 @@
                                                                         
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-auto">
+                                                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -219,15 +232,15 @@
                                 Overview of the COVID-19 Pandemic in the United States
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary"></h6>
                                     <div id="observablehq-viewof-selectedCountry-89c3248d"></div>
                                     <div id="observablehq-viewof-selectedDataSourceIndex-89c3248d"></div>
                                     <div id="observablehq-viewof-map-89c3248d"></div>
                                     <div id="observablehq-viewof-day-89c3248d"></div>
                                     <div id="observablehq-viewof-type-89c3248d"></div>
-                                                                    </div>
-                            </div>
+                                </div>
                                 <!-- Card Body -->
-
+                                <div class="card-body">
 
                                 </div>
                             </div>
