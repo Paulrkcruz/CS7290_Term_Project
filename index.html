@@ -54,7 +54,15 @@ new Runtime().module(define, name => {
   if (name === "vaccines_chart") return new Inspector(document.querySelector("#observablehq-vaccines_chart-89c3248d"));
     });
 </script>
-
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof chart") return new Inspector(document.querySelector("#observablehq-viewof-chart-705adf81"));
+  if (name === "viewof variable") return new Inspector(document.querySelector("#observablehq-viewof-variable-705adf81"));
+  return ["viewof map"].includes(name);
+});
+</script>
 <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
     import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
@@ -273,7 +281,8 @@ new Runtime().module(define, name => {
                                     <div class="card shadow mb-4">
                                 <div class="card-body">
                         <div id="observablehq-viewof-day-89c3248d"></div>
-                        <div id="observablehq-viewof-type-89c3248d"></div>
+                        <div id="observablehq-viewof-chart-705adf81"></div>
+                        <div id="observablehq-viewof-variable-705adf81"></div>
                     </div>
                 </div>
             </div>
@@ -335,13 +344,14 @@ new Runtime().module(define, name => {
                                                     <div
                                                         class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                                         <h6 class="m-0 font-weight-bold text-primary"></h6>
-                                                </div>
+
                                             </div>
                                                         <div class="card-body">
                                                         <div id="observablehq-vaccines_chart-89c3248d"></div>
                                                         </div>
                                             </div>
-
+                                        </div>
+                                        
                                             <!-- Kentucky - Cases by Zip Code -->
                                             <div class="col-xl-8 col-lg-7">
                                                 <div class="card shadow mb-4">
