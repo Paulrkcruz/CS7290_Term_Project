@@ -55,6 +55,17 @@ new Runtime().module(define, name => {
     });
 </script>
 
+<script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "viewof jc") return new Inspector(document.querySelector("#observablehq-viewof-jc-89c3248d"));
+      if (name === "viewof sp") return new Inspector(document.querySelector("#observablehq-viewof-sp-89c3248d"));
+      if (name === "viewof chart") return new Inspector(document.querySelector("#observablehq-viewof-chart-89c3248d"));
+      return ["pdata"].includes(name);
+    });
+</script>
+
 </head>
 
 <body id="page-top">
@@ -329,8 +340,9 @@ new Runtime().module(define, name => {
                                                         <h6 class="m-0 font-weight-bold text-primary"></h6>
                                                         <span> Selections:</span><br>
                                                         
-                                                        <iframe width="100%" height="100%" frameborder="0"
-                                                        src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=viewof+sp%2Cviewof+jc%2Cviewof+chart"></iframe>
+                                                        <div id="observablehq-viewof-jc-89c3248d"></div>
+                                                        <div id="observablehq-viewof-sp-89c3248d"></div>
+                                                        <div id="observablehq-viewof-chart-89c3248d"></div>
 
                                                     </div>
                                                 </div>
