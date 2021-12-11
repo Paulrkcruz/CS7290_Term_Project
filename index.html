@@ -88,12 +88,16 @@ new Runtime().module(define, name => {
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                    <b>Kentucky COVID-19 Tracking Dashboard</b>
+                    <a class="navbar-brand" href="../img/covid19_icon.png">
+            <div class="logo-image">
+            <img src="image" class="img-fluid">
+                        </div></a>
+                    <p class="text-primary"><b>Kentucky COVID-19 Tracking Dashboard</b></p>
+                    
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -174,8 +178,9 @@ new Runtime().module(define, name => {
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
 
                     </div><br>
-                    <h3>NEU CS7290 - Fall 2021 Term Project</h3>
+                     <h3><p class="text-dark"><b>NEU CS7290 - Fall 2021 Term Project</b></p></h3>
                     <p>Authors: Paul RK Cruz & Chih Ming Sun</p>
+                    <br>
 
                     <h3>Project Scope:</h3>
                     <p>Since 2020, the COVID-19 virus spread across the worldwide. Until today, the virus crisis remains effect everyone in the world. The first death case in the USA was from March 2020. Since then, the tracking system was built by the Centers for Disease Control and Prevention. All COVID-19 pandemic data is a large dataset. Scientists are attempting to use what we have learned to avoid a future pandemic.</p>
@@ -186,17 +191,24 @@ new Runtime().module(define, name => {
                     <h3>Key Stakeholder</h3>
                     <p>YuTing Chen, MPH, MS, Manager, Data Scientist in Louisville Metro Department of Public Health and Wellness Center for Health Equity.</p>
 
-                    <h3>Data References:</p>
+                    <h3>Data References:</h3>
+                    <li><a href="https://data.louisvilleky.gov/dataset/covid-19-jefferson-county-louisville-ky">Worldwide Coronavirus Source Data</a></li>
+                    <li><a href="https://github.com/nytimes/covid-19-data">New York Times</a></li>
+                    <li><a href="https://ourworldindata.org/coronavirus-source-data">Open Data from data.louisvilleky.gov</a></li>
+                    <br>
                     
-                    <li><a href="https://data.louisvilleky.gov/dataset/covid-19-jefferson-county-louisville-ky">Worldwide Coronavirus Source Data</a></li><br>
-                    <li><a href="https://github.com/nytimes/covid-19-data">New York Times</a></li><br>
-                    <li><a href="https://ourworldindata.org/coronavirus-source-data">Open Data from data.louisvilleky.gov</a></li><br>
-
                     <h3>Findings:</h3>
-                    <p>We found that from March 2020</p>
-
-                    <p>Chart #1 displays</p>
-
+                    <p>Upon analysis of COVID-19 cases in both the State of Kentucky, its county of Jefferson, and the USA, we have made 3 key findings.
+                        <br>
+                    1. Total cases reported per week indicated a wave in infections, correlating to new variants, combined with weeks of new case decline
+                        <br>
+                    2. Jefferson County has undergone many waves
+                        <br>
+                    3. Vaccination has played a large role in the State of Kentucky and its Jefferson County of lowering the number of cases being reported, thus lowering the number of people becoming sick. However, this has not stopped the spread of the Sars-Cov-2 virus.
+                  
+                    </p>
+                    
+                    <br>
                     <!-- Content Row -->
                     <h3>Current Situation in the USA</h3><br>
                     <div class="row">
@@ -399,7 +411,7 @@ new Runtime().module(define, name => {
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white"><center>
-                <p>Credit: <a href="https://observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3">CS7290 Data Visualizations Term-Project -- Kentucky State COVID-19 Tracking by Paul RK Cruz</a></p>
+                <p>Credit: <a href="https://observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3">CS7290 Data Visualizations Term-Project -- Kentucky State COVID-19 Tracking by Paul RK Cruz & Chih Ming Sun</a></p>
 
 <br>
                 <div class="container my-auto">
