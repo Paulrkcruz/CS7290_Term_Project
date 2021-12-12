@@ -53,6 +53,20 @@ new Runtime().module(define, name => {
 </script>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@paulrkcruz/cs7290-data-visualizations-term-project-kentucky-state-co.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "total_cases") return new Inspector(document.querySelector("#observablehq-total_cases-0efe967a"));
+  if (name === "TotalPopulation") return new Inspector(document.querySelector("#observablehq-TotalPopulation-0efe967a"));
+  if (name === "TotalDeaths") return new Inspector(document.querySelector("#observablehq-TotalDeaths-0efe967a"));
+  if (name === "TotalVaccinated") return new Inspector(document.querySelector("#observablehq-TotalVaccinated-0efe967a"));
+  if (name === "total_cases_KY") return new Inspector(document.querySelector("#observablehq-total_cases_KY-0efe967a"));
+  if (name === "total_pop_KY") return new Inspector(document.querySelector("#observablehq-total_pop_KY-0efe967a"));
+  if (name === "total_deaths_KY") return new Inspector(document.querySelector("#observablehq-total_deaths_KY-0efe967a"));
+  if (name === "total_fully_vaccinated_KY") return new Inspector(document.querySelector("#observablehq-total_fully_vaccinated_KY-0efe967a"));
+});
+</script>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
 new Runtime().module(define, name => {
   if (name === "viewof variable") return new Inspector(document.querySelector("#observablehq-viewof-variable-705adf81"));
@@ -198,7 +212,7 @@ new Runtime().module(define, name => {
                                                 Total US Population</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 
-                                                <div id="observablehq-TotalPopulation-89c3248d"></div>
+                                                <div id="observablehq-TotalPopulation-0efe967a"></div>
                                                 
                                             </div>
                                         
@@ -220,7 +234,7 @@ new Runtime().module(define, name => {
                                                                         Total Cases</div>
                                                                     <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                         
-                                                                        <div id="observablehq-total_cases-89c3248d"></div>
+                                                                        <div id="observablehq-total_cases-0efe967a"></div>
     
                                                                     </div>
                                                                 </div>
@@ -242,7 +256,7 @@ new Runtime().module(define, name => {
                                                                         Total Deaths</div>
                                                                     <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                         
-                                                                        <div id="observablehq-TotalDeaths-89c3248d"></div>
+                                                                        <div id="observablehq-TotalDeaths-0efe967a"></div>
                                                                         
                                                                     </div>
                                                                 </div>
@@ -264,7 +278,7 @@ new Runtime().module(define, name => {
                                                                         Total Vaccinations</div>
                                                                     <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                         
-                                                                        <div id="observablehq-TotalVaccinated-89c3248d"></div>
+                                                                        <div id="observablehq-TotalVaccinated-0efe967a"></div>
                                                                         
                                                                     </div>
                                                                 </div>
@@ -278,7 +292,7 @@ new Runtime().module(define, name => {
                                                 <br>
                                                 <center><p class="text-dark"><h4>Current COVID-19 Statistics in Kentucky</h4><br></p></center>   
                                                 <div class="row">
-                                                    <!-- Total US Population -->
+                                                    <!-- Total KY Population -->
                                                     <div class="col-xl-3 col-md-6 mb-4">
                                                         <div class="card border-left-primary shadow h-100 py-2">
                                                             <div class="card-body">
@@ -288,7 +302,7 @@ new Runtime().module(define, name => {
                                                                             Total KY Population</div>
                                                                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                             
-                                                                            <div id="observablehq-TotalPopulation-89c3248d"></div>
+                                                                            <div id="observablehq-total_pop_KY-0efe967a"></div>
                                                                             
                                                                         </div>
                                                                     
@@ -300,7 +314,7 @@ new Runtime().module(define, name => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                                            <!-- Total US Cases -->
+                                                                            <!-- Total KY Cases -->
                                                                             <div class="col-xl-3 col-md-6 mb-4">
                                                                                 <div class="card border-left-primary shadow h-100 py-2">
                                                                                     <div class="card-body">
@@ -310,7 +324,7 @@ new Runtime().module(define, name => {
                                                                                                     Total Cases</div>
                                                                                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                                                     
-                                                                                                    <div id="observablehq-total_cases-89c3248d"></div>
+                                                                                                    <div id="observablehq-total_cases_KY-0efe967a"></div>
                                 
                                                                                                 </div>
                                                                                             </div>
@@ -322,7 +336,7 @@ new Runtime().module(define, name => {
                                                                                 </div>
                                                                             </div>
                                 
-                                                                            <!-- Total US Deaths -->
+                                                                            <!-- Total KY Deaths -->
                                                                             <div class="col-xl-3 col-md-6 mb-4">
                                                                                 <div class="card border-left-primary shadow h-100 py-2">
                                                                                     <div class="card-body">
@@ -332,7 +346,7 @@ new Runtime().module(define, name => {
                                                                                                     Total Deaths</div>
                                                                                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                                                     
-                                                                                                    <div id="observablehq-TotalDeaths-89c3248d"></div>
+                                                                                                    <div id="observablehq-total_deaths_KY-0efe967a"></div>
                                                                                                     
                                                                                                 </div>
                                                                                             </div>
@@ -344,7 +358,7 @@ new Runtime().module(define, name => {
                                                                                 </div>
                                                                             </div>
                                                                             
-                                                                            <!-- Total US Vaccinations -->
+                                                                            <!-- Total KY Vaccinations -->
                                                                             <div class="col-xl-3 col-md-6 mb-4">
                                                                                 <div class="card border-left-primary shadow h-100 py-2">
                                                                                     <div class="card-body">
@@ -354,7 +368,7 @@ new Runtime().module(define, name => {
                                                                                                     Total Vaccinations</div>
                                                                                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                                                                     
-                                                                                                    <div id="observablehq-TotalVaccinated-89c3248d"></div>
+                                                                                                    <div id="observablehq-total_fully_vaccinated_KY-0efe967a"></div>
                                                                                                     
                                                                                                 </div>
                                                                                             </div>
@@ -463,8 +477,8 @@ new Runtime().module(define, name => {
 
 <!-- Footer -->
 <footer class="sticky-footer bg-white"><center>
-                <p>Credit: <a href="https://observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3">CS7290 Data Visualizations Term-Project -- Kentucky State COVID-19 Tracking by Paul RK Cruz & Chih Ming Sun</a></p>
-
+    <p>Credit: <a href="https://observablehq.com/@paulrkcruz/cs7290-data-visualizations-term-project-kentucky-state-co">CS7290 Data Visualizations Term-Project -- Kentucky State COVID-19 Tracking by paulrkcruz</a></p>
+    
 <br>
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
