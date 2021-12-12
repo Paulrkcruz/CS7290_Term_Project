@@ -100,7 +100,7 @@ new Runtime().module(define, name => {
             <!-- Main Content -->
             <div id="content">
 
-                <!-- Topbar -->
+                <!-- Start of NavBar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                     <a class="navbar-brand" href="../img/covid19_icon.png">
                     <p class="text-dark"><img src="c19.png" alt="c19.png" style="width:25px;height:25px;"> <b>Kentucky COVID-19 Tracking Dashboard</b></p>
@@ -158,9 +158,188 @@ new Runtime().module(define, name => {
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
                         </li>
-
                     </nav>
+                <!-- End of NavBar -->
+
                 <!-- End of Topbar -->
+                <div class="row">
+                    <!-- Total US Population -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            Total US Population</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            
+                                            <div id="observablehq-TotalPopulation-0efe967a"></div>
+                                            
+                                        </div>
+                                    
+                                    <div class="col-auto">
+                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                            <!-- Total US Cases -->
+                                            <div class="col-xl-3 col-md-6 mb-4">
+                                                <div class="card border-left-primary shadow h-100 py-2">
+                                                    <div class="card-body">
+                                                        <div class="row no-gutters align-items-center">
+                                                            <div class="col mr-2">
+                                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                    Total US Cases</div>
+                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                                    
+                                                                    <div id="observablehq-total_cases-0efe967a"></div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Total US Deaths -->
+                                            <div class="col-xl-3 col-md-6 mb-4">
+                                                <div class="card border-left-primary shadow h-100 py-2">
+                                                    <div class="card-body">
+                                                        <div class="row no-gutters align-items-center">
+                                                            <div class="col mr-2">
+                                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                    Total US Deaths</div>
+                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                                    
+                                                                    <div id="observablehq-TotalDeaths-0efe967a"></div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Total US Vaccinations -->
+                                            <div class="col-xl-3 col-md-6 mb-4">
+                                                <div class="card border-left-primary shadow h-100 py-2">
+                                                    <div class="card-body">
+                                                        <div class="row no-gutters align-items-center">
+                                                            <div class="col mr-2">
+                                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                    Total US Vaccinations</div>
+                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                                    
+                                                                    <div id="observablehq-TotalVaccinated-0efe967a"></div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <br> 
+                                            <div class="row">
+                                                <!-- Total KY Population -->
+                                                <div class="col-xl-3 col-md-6 mb-4">
+                                                    <div class="card border-left-primary shadow h-100 py-2">
+                                                        <div class="card-body">
+                                                            <div class="row no-gutters align-items-center">
+                                                                <div class="col mr-2">
+                                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                        Total KY Population</div>
+                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                                        
+                                                                        <div id="observablehq-total_pop_KY-0efe967a"></div>
+                                                                        
+                                                                    </div>
+                                                                
+                                                                <div class="col-auto">
+                                                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                        <!-- Total KY Cases -->
+                                                                        <div class="col-xl-3 col-md-6 mb-4">
+                                                                            <div class="card border-left-primary shadow h-100 py-2">
+                                                                                <div class="card-body">
+                                                                                    <div class="row no-gutters align-items-center">
+                                                                                        <div class="col mr-2">
+                                                                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                                                Total KY Cases</div>
+                                                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                                                                
+                                                                                                <div id="observablehq-total_cases_KY-0efe967a"></div>
+                            
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                            
+                                                                        <!-- Total KY Deaths -->
+                                                                        <div class="col-xl-3 col-md-6 mb-4">
+                                                                            <div class="card border-left-primary shadow h-100 py-2">
+                                                                                <div class="card-body">
+                                                                                    <div class="row no-gutters align-items-center">
+                                                                                        <div class="col mr-2">
+                                                                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                                                Total KY Deaths</div>
+                                                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                                                                
+                                                                                                <div id="observablehq-total_deaths_KY-0efe967a"></div>
+                                                                                                
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <!-- Total KY Vaccinations -->
+                                                                        <div class="col-xl-3 col-md-6 mb-4">
+                                                                            <div class="card border-left-primary shadow h-100 py-2">
+                                                                                <div class="card-body">
+                                                                                    <div class="row no-gutters align-items-center">
+                                                                                        <div class="col mr-2">
+                                                                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                                                                Total Vaccinations</div>
+                                                                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                                                                
+                                                                                                <div id="observablehq-total_fully_vaccinated_KY-0efe967a"></div>
+                                                                                                
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div> 
+
                 <br>
                 <center><img src="kyc19.png" alt="kyc19.png" style="width:50%;height:50%;"></center>
                 <br>                      
@@ -200,183 +379,6 @@ new Runtime().module(define, name => {
                     
                     <br>
                     <!-- Content Row -->                         
-                    <div class="row">
-                        <!-- Total US Population -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Total US Population</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                
-                                                <div id="observablehq-TotalPopulation-0efe967a"></div>
-                                                
-                                            </div>
-                                        
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                                                <!-- Total US Cases -->
-                                                <div class="col-xl-3 col-md-6 mb-4">
-                                                    <div class="card border-left-primary shadow h-100 py-2">
-                                                        <div class="card-body">
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col mr-2">
-                                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                        Total US Cases</div>
-                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                                        
-                                                                        <div id="observablehq-total_cases-0efe967a"></div>
-    
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-    
-                                                <!-- Total US Deaths -->
-                                                <div class="col-xl-3 col-md-6 mb-4">
-                                                    <div class="card border-left-primary shadow h-100 py-2">
-                                                        <div class="card-body">
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col mr-2">
-                                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                        Total US Deaths</div>
-                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                                        
-                                                                        <div id="observablehq-TotalDeaths-0efe967a"></div>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <!-- Total US Vaccinations -->
-                                                <div class="col-xl-3 col-md-6 mb-4">
-                                                    <div class="card border-left-primary shadow h-100 py-2">
-                                                        <div class="card-body">
-                                                            <div class="row no-gutters align-items-center">
-                                                                <div class="col mr-2">
-                                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                        Total US Vaccinations</div>
-                                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                                        
-                                                                        <div id="observablehq-TotalVaccinated-0efe967a"></div>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto">
-                                                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> 
-                                                <br> 
-                                                <div class="row">
-                                                    <!-- Total KY Population -->
-                                                    <div class="col-xl-3 col-md-6 mb-4">
-                                                        <div class="card border-left-primary shadow h-100 py-2">
-                                                            <div class="card-body">
-                                                                <div class="row no-gutters align-items-center">
-                                                                    <div class="col mr-2">
-                                                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                            Total KY Population</div>
-                                                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                                            
-                                                                            <div id="observablehq-total_pop_KY-0efe967a"></div>
-                                                                            
-                                                                        </div>
-                                                                    
-                                                                    <div class="col-auto">
-                                                                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                                            <!-- Total KY Cases -->
-                                                                            <div class="col-xl-3 col-md-6 mb-4">
-                                                                                <div class="card border-left-primary shadow h-100 py-2">
-                                                                                    <div class="card-body">
-                                                                                        <div class="row no-gutters align-items-center">
-                                                                                            <div class="col mr-2">
-                                                                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                                                    Total KY Cases</div>
-                                                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                                                                    
-                                                                                                    <div id="observablehq-total_cases_KY-0efe967a"></div>
-                                
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-auto">
-                                                                                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                
-                                                                            <!-- Total KY Deaths -->
-                                                                            <div class="col-xl-3 col-md-6 mb-4">
-                                                                                <div class="card border-left-primary shadow h-100 py-2">
-                                                                                    <div class="card-body">
-                                                                                        <div class="row no-gutters align-items-center">
-                                                                                            <div class="col mr-2">
-                                                                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                                                    Total KY Deaths</div>
-                                                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                                                                    
-                                                                                                    <div id="observablehq-total_deaths_KY-0efe967a"></div>
-                                                                                                    
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-auto">
-                                                                                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            
-                                                                            <!-- Total KY Vaccinations -->
-                                                                            <div class="col-xl-3 col-md-6 mb-4">
-                                                                                <div class="card border-left-primary shadow h-100 py-2">
-                                                                                    <div class="card-body">
-                                                                                        <div class="row no-gutters align-items-center">
-                                                                                            <div class="col mr-2">
-                                                                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                                                                    Total Vaccinations</div>
-                                                                                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                                                                    
-                                                                                                    <div id="observablehq-total_fully_vaccinated_KY-0efe967a"></div>
-                                                                                                    
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-auto">
-                                                                                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div> 
 <!-- Start of Main Content -->
 <div class="row">
 </div>
