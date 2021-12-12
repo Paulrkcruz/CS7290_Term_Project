@@ -186,7 +186,7 @@ new Runtime().module(define, name => {
                             </div>
                         </div>
                     </div>
-
+                </div>
                                             <!-- Total US Cases -->
                                             <div class="col-xl-3 col-md-6 mb-4">
                                                 <div class="card border-left-primary shadow h-100 py-2">
@@ -253,7 +253,7 @@ new Runtime().module(define, name => {
                                                 </div>
                                             </div> 
                                             <br> 
-                                            
+                                            <div class="row">
                                                 <!-- Total KY Population -->
                                                 <div class="col-xl-3 col-md-6 mb-4">
                                                     <div class="card border-left-primary shadow h-100 py-2">
@@ -275,6 +275,7 @@ new Runtime().module(define, name => {
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
                                                                         <!-- Total KY Cases -->
                                                                         <div class="col-xl-3 col-md-6 mb-4">
                                                                             <div class="card border-left-primary shadow h-100 py-2">
@@ -340,17 +341,15 @@ new Runtime().module(define, name => {
                                                                                 </div>
                                                                             </div>
                                                                         </div> 
-                                                                    </div>
-                                                                    
+
                 <!-- End of Dashboard Statistics-->
                 <br>
-                <div class="row">
-
-                <center><img src="kyc19.png" alt="kyc19.png" style="width:100%;height:100%;"></center>
-
-                </div>
+                
                 <br>                      
                 <!-- Begin Page Content -->
+                <div class="d-flex flex-column justify-content-center align-items-center h-25">
+                <center><img src="kyc19.png" alt="kyc19.png" style="width:100%;height:100%;"></center>
+                </div>
 
                 <div class="container-fluid">
                     
@@ -392,18 +391,19 @@ new Runtime().module(define, name => {
 </div>
 <br>
 <!-- USA COVID-19 Statistics Display Variable Selection & Map -->
-<div class="d-flex flex-column justify-content-center align-items-center h-25">
 <p class="text-dark"><h4><b>USA Map detailing the spread of the Sars-CoV-2 Virus across the United States during the pandemic.</b></h4></p>
 
 <center><iframe width="1100" height="1100" frameborder="0"src="https://observablehq.com/embed/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3?cells=viewof+map%2Cviewof+variable%2Cviewof+day"></iframe></center>
-</div>
+
 <br>
 
 <!-- USA Case Trends -->
 <div class="d-flex flex-column justify-content-center align-items-center h-25">
+    <div class="card shadow mb-4">
         <p class="text-dark"><h4><b>USA - New Cases in the Past Week</b></h4></p>
         <div id="observablehq-USChart-5ab5e7c9"></div>
         <div class="float-right">Cases across the United States have fluxuated, depending on which variants were spreading in the respective time periods.</div><br>
+        </div>
 </div>
 
 <br>
