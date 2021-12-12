@@ -38,18 +38,20 @@
     });
 </script>
 <script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@paul-rk-cruz/cs7290-data-visualizations-term-project-kentucky-state-co/3.js?v=3";
-new Runtime().module(define, name => {
-  if (name === "TotalPopulation") return new Inspector(document.querySelector("#observablehq-TotalPopulation-89c3248d"));
-  if (name === "TotalDeaths") return new Inspector(document.querySelector("#observablehq-TotalDeaths-89c3248d"));
-  if (name === "TotalVaccinated") return new Inspector(document.querySelector("#observablehq-TotalVaccinated-89c3248d"));
-  if (name === "total_cases") return new Inspector(document.querySelector("#observablehq-total_cases-89c3248d"));
-  if (name === "USChart") return new Inspector(document.querySelector("#observablehq-USChart-89c3248d"));
-  if (name === "KentuckyChart") return new Inspector(document.querySelector("#observablehq-KentuckyChart-89c3248d"));
-  if (name === "JeffersonCountyChart") return new Inspector(document.querySelector("#observablehq-JeffersonCountyChart-89c3248d"));
-  if (name === "vaccines_chart") return new Inspector(document.querySelector("#observablehq-vaccines_chart-89c3248d"));
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@paulrkcruz/cs7290-data-visualizations-term-project-kentucky-state-co.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "vaccines_chart") return new Inspector(document.querySelector("#observablehq-vaccines_chart-5ab5e7c9"));
     });
+    </script>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@paulrkcruz/cs7290-data-visualizations-term-project-kentucky-state-co.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "KentuckyChart") return new Inspector(document.querySelector("#observablehq-KentuckyChart-5ab5e7c9"));
+  if (name === "JeffersonCountyChart") return new Inspector(document.querySelector("#observablehq-JeffersonCountyChart-5ab5e7c9"));
+  if (name === "USChart") return new Inspector(document.querySelector("#observablehq-USChart-5ab5e7c9"));
+});
 </script>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -161,7 +163,7 @@ new Runtime().module(define, name => {
                     </nav>
                 <!-- End of NavBar -->
 
-                <!-- End of Topbar -->
+                <!--Start of Dashboard Statistics -->
                 <div class="row">
                     <!-- Total US Population -->
                     <div class="col-xl-3 col-md-6 mb-4">
@@ -340,6 +342,7 @@ new Runtime().module(define, name => {
                                                                             </div>
                                                                         </div> 
 
+                <!-- End of Dashboard Statistics-->
                 <br>
                 
                 <br>                      
@@ -347,7 +350,7 @@ new Runtime().module(define, name => {
                 <div class="d-flex flex-column justify-content-center align-items-center h-25">
                 <center><img src="kyc19.png" alt="kyc19.png" style="width:100%;height:100%;"></center>
                 </div>
-                
+
                 <div class="container-fluid">
                     
                     <!-- Page Heading -->
@@ -398,7 +401,7 @@ new Runtime().module(define, name => {
 <div class="d-flex flex-column justify-content-center align-items-center h-25">
     <div class="card shadow mb-4">
         <p class="text-dark"><h4><b>USA - New Cases in the Past Week</b></h4></p>
-        <div id="observablehq-USChart-89c3248d"></div>
+        <div id="observablehq-USChart-5ab5e7c9"></div>
         <div class="float-right">Cases across the United States have fluxuated, depending on which variants were spreading in the respective time periods.</div><br>
         </div>
 </div>
@@ -409,7 +412,7 @@ new Runtime().module(define, name => {
 <div class="col-xl-8 col-lg-7">
     <div class="card shadow mb-4">
 <h3><b>Kentucky - New Cases in the Past Week</b></h3>
-<div id="observablehq-KentuckyChart-89c3248d"></div>
+<div id="observablehq-KentuckyChart-5ab5e7c9"></div>
 <div class="float-right">In the State of Kentucky, cases are beginning to rise, at the time where the most individuals have been vaccinated.</div><br>
 </div>
 </div>
@@ -420,7 +423,7 @@ new Runtime().module(define, name => {
 <div class="col-xl-8 col-lg-7">
     <div class="card shadow mb-4"> 
 <h3><b>Jefferson County, KY - New Cases in the Past Week</b></h3>                                                 
-<div id="observablehq-JeffersonCountyChart-89c3248d"></div>
+<div id="observablehq-JeffersonCountyChart-5ab5e7c9"></div>
 <div class="float-right">In Jefferson County, Kentucky, cases are following the same trend as the state with very simliair new cases per week.</div><br>
 </div>
 </div>
@@ -431,7 +434,7 @@ new Runtime().module(define, name => {
 <div class="col-xl-8 col-lg-7">
     <div class="card shadow mb-4"> 
 <h3><b>Kentucky, Total Daily Vaccinations</b></h3>                                                  
-<div id="observablehq-vaccines_chart-89c3248d"></div>
+<div id="observablehq-vaccines_chart-5ab5e7c9"></div>
 <div class="float-right">From February 19 - Dec 09, vaccinations were heavy at first, then began to level off, which could be due to many individuals getting the first vaccine at or around the same time, and later acquiring the second vaccine and/or booster dose.</div><br>
 </div>
 </div>
